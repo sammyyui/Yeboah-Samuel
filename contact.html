@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+             <h1>PEARSON BTECH LEVEL 3</h1>
+           </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="text-center">
+      <h1 class="heading">Contact Us</h1>
+      <p class="subheading">We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div class="card">
+          <h2 class="heading contact-info-heading">Contact Information</h2>
+          <div class="space-y-4">
+            <div class="info-section">
+              <i class="fas fa-map-marker-alt info-icon"></i>
+              <div class="info-content">
+                <h3>Address</h3>
+                <p>123 Business Street, Suite 100<br>Madina Accra, CA 94107</p>
+              </div>
+            </div>
+            <div class="info-section">
+              <i class="fas fa-phone-alt info-icon"></i>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <p>(233) 55-824-8319</p>
+              </div>
+            </div>
+            <div class="info-section">
+              <i class="fas fa-envelope info-icon"></i>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>yeboahsamuel80080@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="card">
+          <h2 class="heading" style="font-size: 1.5rem;">Follow Us</h2>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Optional: Add JavaScript for form submission or other interactivity
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission for demo purposes
+      alert('Thank you for your message! We will get back to you soon.');
+    });
+  </script>
+</body>
+</html>
+   

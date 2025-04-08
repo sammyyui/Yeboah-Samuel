@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Discover Ghana</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+             <h1>PEARSON BTECH LEVEL 3</h1>
+           </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Photo Gallery</h2>
+            </div>
+            
+        
+            
+            <div class="gallery-container">
+                <div class="gallery-item large" data-category="nature">
+                    <img src="IMAGE/Cape Coast Castle (1).jpg" alt="Cape Coast Castle">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Cape Coast</div>
+                        <div class="gallery-item-location">Cape Coast Castle</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="nature">
+                    <img src="IMAGE/kakum national park tt.jpg" alt="Kakum National Park Canopy Walkway">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Canopy Walkway</div>
+                        <div class="gallery-item-location">Kakum National Park</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="nature">
+                    <img src="IMAGE/Ada Foah .jpg" alt="Ada Foah Beach">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Beach</div>
+                        <div class="gallery-item-location">Ada Foah Beach</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item tall" data-category="nature">
+                    <img src="IMAGE/boti falls.jpg" alt="Boti Falls">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Eastern Region</div>
+                        <div class="gallery-item-location">Boti Falls</div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item" data-category="culture">
+                    <img src="IMAGE/elmina.jpg" alt="Elmina">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Elmina Castle</div>
+                        <div class="gallery-item-location">Elmina</div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="gallery-item wide" data-category="heritage">
+                    <img src="IMAGE/pond.jpg" alt="Crocodile Pond">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Crocodile Pond</div>
+                        <div class="gallery-item-location">Northern Region</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="heritage">
+                    <img src="IMAGE/mole.jpg" alt="Larabanga Mosque">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Larabanga Mosque</div>
+                        <div class="gallery-item-location">Northern Region</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item tall" data-category="beaches">
+                    <img src="IMAGE/safari.jpg" alt="safari Vallery">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">safari Vallery</div>
+                        <div class="gallery-item-location">Eastern Region</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item wide" data-category="beaches">
+                    <img src="IMAGE/Ghana Rising.jpg" alt="Kokrobite Beach">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Palm-lined Shore</div>
+                        <div class="gallery-item-location">Kokrobite Beach</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beaches">
+                    <img src="IMAGE/Adome Bridge .jpg" alt="Adome Bridge">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Adome Bridge</div>
+                        <div class="gallery-item-location">Eastern Region</div>
+                    </div>
+                </div>
+                
+                
+                <div class="gallery-item" data-category="cities">
+                    <img src="IMAGE/ooo.jpg" alt="Independence Square">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Independence Square</div>
+                        <div class="gallery-item-location">Accra</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cities">
+                    <img src="IMAGE/ACCRA.webp" alt="Accra City Life">
+                    <div class="gallery-overlay">
+                        <div class="gallery-item-title">Accra City</div>
+                        <div class="gallery-item-location">Accra</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn" id="loadMoreBtn">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">×</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-nav">
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="back-to-home">
+                <a href="index.html" class="btn">Back to Homepage</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Discover Ghana. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

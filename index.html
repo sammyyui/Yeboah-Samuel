@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+             <h1>PEARSON BTECH LEVEL 3</h1>
+           </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="text-box">
+        <h1>Welcome to Our Tourism Website</h1>
+        <p>Explore the beauty of our world.</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+    </div>
+        
+
+<!----- Culture ----->
+
+<section class="Culture">
+    <h1>Our Culture</h1>
+    <p>Ghana, a vibrant nation on the West African coast, boasts a rich and diverse culture shaped by its numerous ethnic groups, history, and traditions.  Here's a glimpse into the key aspects of Ghanaian culture:</p>
+  <div class="culture-cont">
+    <div class="rows">
+        <div class="culture-cols">
+            <h3>Traditional Festivals</h3>
+            <p>Ghana is a land rich in culture and tradition, and this vibrant heritage is vividly expressed through its numerous traditional festivals. Throughout the year, different ethnic groups across the country celebrate events that mark historical milestones, religious beliefs, harvests, and rites of passage. These festivals are not just colorful spectacles; they are deeply rooted in the social, spiritual, and economic lives of the communities.</p>
+        </div>
+    </div>
+        <div class="row">
+            <div class="culture-col">
+                <h2>Christian Festivals</h2>
+                <p>The Christian calendar is rich with festivals that commemorate significant events in the life of Jesus Christ and the history of the Christian faith. These celebrations vary in their observance across different denominations and cultures, but they share core themes of remembrance, worship, and spiritual growth.</p>
+            </div>
+        </div>
+            <div class="row">
+                <div class="culture-col">
+                    <h2>Islamic Festivals</h2>
+                    <p>The Islamic calendar, a lunar calendar, is punctuated by several significant festivals that bring Muslims together in celebration, reflection, and acts of devotion. These festivals are determined by the sighting of the new moon, so their dates on the Gregorian calendar shift each year.</p>
+        
+                </div>
+            </div>
+  </div>          
+</section> 
+
+<!------ Tourist ------>
+
+<section class="tourist">
+    <h1>Our Tourist Attractions</h1>
+    <p>Accra, the vibrant capital of Ghana, offers a diverse range of tourist attractions catering to various interests. Here's a breakdown of some key highlights:</p>
+
+    <div class="picture-cont">
+        <div class="tourist-col">
+            <img src="IMAGE/boti falls.jpg" alt="Boti Falls">
+            <div class="tour-name"><h2>Boti Falls</h2></div>
+        </div>
+        <div class="tourist-col">
+            <img src="IMAGE/Kakum National Park - Ghana.jpg" alt="Kakum National Park">
+            <div><h2>Kakum National Park</h2></div>
+            <div class="tour-name"><h2>Boti Falls</h2></div>
+        </div>        
+        <div class="tourist-col">
+            <img src="IMAGE/Cape Coast Castle (1).jpg" alt="Cape Coast Castle">
+            <div class="tour-name"><h2>Cape Coast Castle</h2></div>
+        </div>
+        
+
+    </div>
+
+</section>
+
+!<!------ Food ----->
+
+<section class="food">
+    <h1>Our Food</h1>
+    <p>One small but significant detail about Ghanaian local food is the communal way it's often enjoyed. Dishes are frequently served in large bowls placed in the center, and everyone gathers around to eat together. It's common to eat with your right hand, using a ball of fufu, banku, or kenkey to scoop up the flavorful stews and soups. This shared eating experience highlights the strong sense of community and togetherness that is often intertwined with Ghanaian culture.</p>
+
+    <div class="food-cont">
+        <div class="food-col">
+            <img src="IMAGE/fufu.jpg" alt="">
+            <h3>Delicious food</h3>
+            <p>Fufu is a staple food in many West African countries, including Ghana. It's made by boiling starchy foods like cassava, yams, or plantains and then pounding them into a smooth, stretchy dough-like consistency. Fufu is typically served with rich soups or stews, making it a hearty and filling dish.</p>
+        </div>
+        <div class="food-col">
+            <img src="IMAGE/banku.jpg" alt="">
+            <h3>Delicious food</h3>
+            <p>Banku is a popular Ghanaian staple food made from fermented corn and cassava dough. It has a slightly sour taste and a smooth, doughy texture.</p>
+        </div>
+        <div class="food-col">
+            <img src="IMAGE/boiled.jpg" alt="">
+            <h3>Delicious food</h3>
+            <p>Boiled yam is a fundamental and beloved staple in Ghanaian cuisine. It's more than just a simple side dish; it's a versatile foundation for many meals and deeply ingrained in the country's food culture. </p>
+        </div>
+    </div>
+
+
+</section>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+    var navLinks = document.getElementById("#nav-links");
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+    
+</script>
+    </body>
+</html>

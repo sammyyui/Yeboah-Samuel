@@ -1,0 +1,259 @@
+/* About  */
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.about-page {
+    padding: 40px 0;
+}
+
+.sam {
+    /* background-color: #e9ecef; */
+    background: url(IMAGE/odogwu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sam .container {
+    max-width: 800px;
+}
+
+.sam h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.sam p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.our-story,
+.our-mission,
+.meet-the-team,
+.our-values {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.our-story:last-child,
+.our-mission:last-child,
+.meet-the-team:last-child,
+.our-values:last-child {
+    border-bottom: none;
+}
+
+.our-story h2,
+.our-mission h2,
+.meet-the-team h2,
+.our-values h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.our-story p,
+.our-mission p,
+.our-values p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.our-mission ul,
+.our-values ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.our-mission ul li,
+.our-values ul li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Meet the Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member .role {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.team-member .bio {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 15px;
+}
+
+footer nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Design (Optional - Adjust as needed) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+}
